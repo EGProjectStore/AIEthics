@@ -1,0 +1,252 @@
+:root{
+    --white: #fbfff1;
+    --pink: #e5989b;
+    --black: #54494b;
+    --lightblue: #2e86ab;
+    --darkblue: #247ba0;
+
+
+}
+
+
+body{
+    background-color: var(--pink);
+    margin: 0px;
+    margin-bottom: 400px;
+}
+
+#backgroundText{
+    position: fixed;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 22px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    padding: none;
+    margin: none;
+    z-index: -4;
+    opacity: .2;
+    filter: blur(1.5px);
+}
+
+
+#Title{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+
+    text-align: center;
+}
+    
+#Citation{
+    position: fixed;
+    top: 0;
+    margin: none;
+    left: 20%;
+    
+    width: 60%;
+    background-color: var(--white);
+    opacity: .9;
+    height: 100%;
+    z-index: -1;
+    font-size: 12px;
+}
+
+
+.citeClass{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 25%;
+    width: 50%;
+    text-wrap: wrap;
+    padding: 10px;
+    line-height: 2;
+    padding-left: 30px ;
+    text-indent: -30px ;
+}
+
+#navbar{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 60px;
+    background-color: var(--white);
+    opacity: .9;
+    z-index: 10;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--white);
+    margin: none;
+    opacity: .9;
+    
+}
+
+#cited{
+    position: absolute;
+    top: 35%;
+    font-family: monospace;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+}
+
+.defaultBox{
+    position:relative;
+    width: 55%;
+    height: 550px;
+    top: 240px;
+    left: 20%;
+    background-color: var(--white);
+    box-shadow: 15px 15px rgba(0,0,0, .2);
+    padding: 35px;
+    margin-bottom: 27%;
+    margin-left: 0px;
+    margin-right: 0px;  
+    opacity: 0;
+    animation: fadeIn 4s 4.5s forwards
+    
+}
+
+iframe{
+    position: relative;
+    width: 670px;
+    height: 415px;
+    top: 130px;
+    left: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mediaDiv{
+    position: relative;
+    width: 80%;
+    height: 700px;
+    background-color: var(--white);
+    margin-top: 140px;
+    left: 10%;
+    opacity: 0;
+    animation: fadeIn 4s 4.5s forwards;
+    box-shadow: 15px 15px rgba(0,0,0, .2);
+    overflow: scroll;
+
+}
+
+#Change{
+    position: absolute;
+    width: 5%;
+    left: 95%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+    animation: fadeIn 4s 4.5s forwards;
+    
+}
+#Change:hover{
+    background-color: rgba(100, 100, 100, .9)
+    
+}
+
+.contentButton{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: monospace;
+    top: 70%;
+    width: 100%;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+}
+.contentButton:hover{
+    background-color: rgba(100, 100, 100, .9);
+    color: whitesmoke;
+}
+
+.mediaHeader{
+    font-size: 25px;
+    left: 100px;
+    top: 20px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+
+}
+.mediaLink{
+
+font-size: 20px;
+position: absolute;
+left: 870px;
+top: 500px;
+width: 550px;
+
+}
+
+
+.mediaContent{
+    font-size: 20px;
+    position: absolute;
+    left: 870px;
+    width: 400px;
+    top: 130px;
+    word-wrap: normal;
+    font-family: monospace;
+}
+
+.textClass{
+    font-size: 20px;
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    font-family: monospace;
+    padding-right: 30px;
+}
+.textClassHeader{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.typewriter1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    top: 15px;
+    position: absolute;
+    left: 15px;
+    overflow: hidden;
+    border-right: .09em solid var(--black);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .09em;
+    animation:
+        type 3.8s steps(78, end),
+        blink .75s steps(1, end) 3.8s infinite;
+}
+
+@keyframes type {
+    from {width: 0%}
+    to {width: 880px}
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0}
+    100%{opacity: .95}
+}
+
+
+@keyframes blink{
+    0%{border-color: var(--black)}
+    50% {border-color: var(--black)}
+    50.01%{border-color: transparent}
+    100%{border-color: transparent}
+}
